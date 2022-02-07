@@ -9,6 +9,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      ///DebugShowCheckedModeBanner
+      debugShowCheckedModeBanner: false,
+
+      ///Theme
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+        backgroundColor: Colors.black,
+      ),
+
+      ///Home
       home: DiceGame(),
     );
   }
